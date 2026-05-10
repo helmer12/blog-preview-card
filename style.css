@@ -47,14 +47,6 @@ button {
     padding: 0.4rem 0.8rem;
 }
 
-/*button:hover {
-    cursor: pointer;
-}
-
-button:focus-visible {
-    outline: 2px solid var(--gray-950);
-    outline-offset: 3px;
-}*/
 button:hover,
 button:focus-visible {
     outline: 2px solid var(--gray-950);
@@ -107,6 +99,5 @@ h1 a:focus-visible {
 .attribution a:hover,
 .attribution a:focus-visible {
     color: var(--gray-950);
-    /* outline: 2px solid var(--gray-950);*/
     outline-offset: 2px;
 }
