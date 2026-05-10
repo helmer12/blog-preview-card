@@ -1,10 +1,10 @@
 :root {
-    --Yellow: hsl(47, 88%, 63%);
+    --yellow: hsl(47, 88%, 63%);
 
-    --White: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
 
-    --Gray-500: hsl(0, 0%, 42%);
-    --Gray-950: hsl(0, 0%, 7%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
 }
 
 *, *::before,*::after {
@@ -13,8 +13,8 @@
 
 body {
     font-family: 'Figtree', sans-serif;
-    background-color: var(--Yellow);
-    color: var(--Gray-950);
+    background-color: var(--yellow);
+    color: var(--gray-950);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +25,12 @@ body {
 }
 
 .container {
-    background-color: var(--White);
+    background-color: var(--white);
     border-radius: 24px;
-    max-width: 384px;
-    border: 1px solid var(--Gray-950);
+    max-width: 24rem;
+    border: 1px solid var(--gray-950);
     padding: 24px;
-    box-shadow: 8px 8px 0 var(--Gray-950);
+    box-shadow: 8px 8px 0 var(--gray-950);
 }
 
 .card-img {
@@ -40,25 +40,46 @@ body {
 }
 
 button {
-    background-color: var(--Yellow);
+    background-color: var(--yellow);
     border: none;
     font-weight: 700;
     border-radius: 5px;
     padding: 0.4rem 0.8rem;
 }
 
+/*button:hover {
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--gray-950);
+    outline-offset: 3px;
+}*/
+button:hover,
+button:focus-visible {
+    outline: 2px solid var(--gray-950);
+    outline-offset: 3px;
+    cursor: pointer;
+}
+
+
 h1 {
     font-weight: 800;
     font-size: 1.5rem;
 }
 
-h1:hover {
-    color: var(--Yellow);
-    cursor: pointer;
+h1 a {
+    text-decoration: none;
+    color: var(--gray-950);
+}
+
+h1 a:hover,
+h1 a:focus-visible {
+    color: var(--yellow);
 }
 
 .card-content p{
-    color: var(--Gray-500);
+    color: var(--gray-500);
     margin-top: 1rem;
 }
 
@@ -81,4 +102,11 @@ h1:hover {
 
 .attribution {
     margin-top: 40px;
+}
+
+.attribution a:hover,
+.attribution a:focus-visible {
+    color: var(--gray-950);
+    /* outline: 2px solid var(--gray-950);*/
+    outline-offset: 2px;
 }
