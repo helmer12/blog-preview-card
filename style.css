@@ -21,22 +21,22 @@ body {
     justify-content: center;
     line-height: 1.6;
     min-height: 100vh;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .container {
     background-color: var(--white);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     max-width: 24rem;
     border: 1px solid var(--gray-950);
-    padding: 24px;
-    box-shadow: 8px 8px 0 var(--gray-950);
+    padding: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 0 var(--gray-950);
 }
 
 .card-img {
-    border-radius: 12px;
+    border-radius: 0.7rem;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 button {
@@ -93,11 +93,12 @@ h1 a:focus-visible {
 }
 
 .attribution {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .attribution a:hover,
 .attribution a:focus-visible {
     color: var(--gray-950);
+    outline: 2px solid var(--gray-950);
     outline-offset: 2px;
 }
